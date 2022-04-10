@@ -1,0 +1,2 @@
+export PATH="/home/mqx/hive/scripts:$PATH"
+
