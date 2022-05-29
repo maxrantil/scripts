@@ -1,1 +1,1 @@
-export PATH="/home/mqx/hive/scripts:$PATH"
+export PATH="home/mqx/scripts:$PATH"

@@ -1,0 +1,8 @@
+$ var="something wicked this way comes..."
+$ echo ${var:10}
+wicked this way comes...
+$ echo ${var:10:6}
+wicked
+$
+
+
