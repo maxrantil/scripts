@@ -1,0 +1,11 @@
+#!/bin/bash
+
+spass1=$(dialog --no-cancel --passwordbox "Enter a new root password." 10 60 3>&1 1>&2 2>&3 3>&1)
+spass2=$(dialog --no-cancel --passwordbox "Retype password." 10 60 3>&1 1>&2 2>&3 3>&1)
+while ! [ "$spass1" = "$spass2" ]; do
+        unset spass2
+        spass1=$(dialog --no-cancel --passwordbox "Passwords do not match.\\n\\nEnter password again." 10 60 3>&1 1>&2 2>&3 3>&1)
+        spass2=$(dialog --no-cancel --passwordbox "Retype password." 10 60 3>&1 1>&2 2>&3 3>&1)
+done
+echo "$spass1"
+

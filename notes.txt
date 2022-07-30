@@ -4,5 +4,3 @@ wicked this way comes...
 $ echo ${var:10:6}
 wicked
 $
-
-
